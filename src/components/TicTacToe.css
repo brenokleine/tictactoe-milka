@@ -1,0 +1,116 @@
+
+
+.container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.tic-tac-toe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 8px var(--tertiary);
+    backdrop-filter: blur(80px);
+    border-radius: 20px;
+    width: min-content;
+    padding: 20px;
+}
+
+.game-text{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary);
+    backdrop-filter: blur(5px);
+    height: min-content;
+    width: fit-content;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: 
+        "0 1 2"
+        "3 4 5"
+        "6 7 8"
+    ;
+    gap: 15px;
+}
+
+.gameBtn{
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    height: 120px;
+    width: 120px;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.gameBtn:hover{
+    background-color: var(--tertiary);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.player-turn{
+    color: var(--secondary);
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result h1{
+    text-align: center;
+}
+
+.endgame{
+    color: var(--secondary);
+    font-size: 35px;
+}
+
+.my-modal .restart-btn{
+    background-color: var(--tertiary);
+    border: none;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gameBtn{
+        width: 100px;
+        height: 100px;
+    }
+
+    .game-text{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .gameBtn{
+        width: 80px;
+        height: 80px;
+    }
+
+    .game-text{
+        text-align: center;
+    }
+}
+
+    
+
+    
+

@@ -1,0 +1,23 @@
+
+.btn-container{
+    width: auto; 
+    display: flex;
+    justify-content: center;
+}
+
+p.btn-txt{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 0;
+
+}
+
+.btn-txt{
+    font-size: 20px;
+}
+
+.btn{
+    background-color: white;
+}

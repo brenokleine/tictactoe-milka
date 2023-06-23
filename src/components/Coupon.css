@@ -1,0 +1,24 @@
+
+
+.coupon-container{
+    background-image: url('/public/img/choco-rain.gif');
+    background-repeat: repeat;
+    background-size: 35%;
+    height: 100%;
+    width: auto;
+}
+
+.milka2{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.modal-title{
+    text-align: center;
+}
+
+.modal-footer .play-again{
+    background-color: var(--tertiary);
+    border: none;
+}
