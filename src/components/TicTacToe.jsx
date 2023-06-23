@@ -25,7 +25,7 @@ const TicTacToe = () => {
   // renders each cell based on the board state
   const renderCell = (index) => {
     return (
-      <button className={index + " gameBtn"} onClick={() => handleCellClick(index)}>
+      <button className={index + " gameBtn shadow-lg"} onClick={() => handleCellClick(index)}>
         {board[index]}
       </button>
     );
@@ -90,7 +90,7 @@ const TicTacToe = () => {
           <h1>Win the game for a Coupon on Milka™ products!</h1>
         </div>
         
-        <div className="tic-tac-toe">
+        <div className="tic-tac-toe shadow-lg">
           <div className="board">
             {board.map((cell, index) => (
               <div key={index} >
